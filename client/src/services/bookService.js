@@ -91,6 +91,8 @@ export const createBook = async (bookData) => {
             throw new Error('You must be authenticated to create a book');
         }
 
+        console.log('Access Token:', userData.accessToken);
+
         const formattedData = {
             title: bookData.title,
             author: bookData.author,
