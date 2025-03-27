@@ -1,0 +1,26 @@
+{
+    "1": {
+        "_id": "1",
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "rating": 4.5,
+        "description": "A novel set in the 1920s, 'The Great Gatsby' explores themes of wealth, love, and the American Dream...",
+        "_ownerId": "user1"
+    },
+    "2": {
+        "_id": "2",
+        "title": "1984",
+        "author": "George Orwell",
+        "rating": 4.8,
+        "description": "A dystopian novel set in a totalitarian regime...",
+        "_ownerId": "user2"
+    },
+    "3": {
+        "_id": "3",
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "rating": 4.9,
+        "description": "A powerful story of racial injustice and the loss of innocence in the American South...",
+        "_ownerId": "user1"
+    }
+}

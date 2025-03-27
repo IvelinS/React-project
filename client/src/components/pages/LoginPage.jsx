@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../Authentication/AuthContext';
+import { getAllBooks, initializeDefaultBooks } from '../../services/bookService';
 
 const LoginPage = () => {
     const [email, setEmail] = useState('');
@@ -12,7 +13,14 @@ const LoginPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await login(email, password);
+            const userData = await login(email, password);
+            localStorage.setItem('auth', JSON.stringify(userData));
+            
+            const books = await getAllBooks();
+            if (books.length === 0 && userData.isAdmin) {
+                await initializeDefaultBooks();
+            }
+            
             navigate('/');
         } catch (err) {
             setError('Invalid email or password');
