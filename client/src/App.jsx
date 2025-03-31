@@ -12,6 +12,7 @@ import HomePage from './components/pages/HomePage';
 import LoginPage from './components/pages/LoginPage';
 import RegisterPage from './components/pages/RegisterPage';
 import CatalogPage from './components/pages/CatalogPage';
+import BookDetailsPage from './components/pages/BookDetailsPage';
 
 function App() {
   const { auth } = useAuth();
@@ -33,6 +34,7 @@ function App() {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
             <Route path="/catalog" element={<CatalogPage />} />
+            <Route path="/books/:id" element={<BookDetailsPage />} />
             <Route 
               path="/create" 
               element={

@@ -22,7 +22,7 @@ const BookCard = ({ book }) => {
                         : book.description}
                 </p>
                 <Link 
-                    to={`/books/${book._id}`} 
+                    to={`/books/${book._id}`}
                     className="details-button"
                 >
                     View Details

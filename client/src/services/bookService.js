@@ -169,3 +169,29 @@ export const initializeDefaultBooks = async () => {
     }
 };
 
+export const deleteBook = async (id) => {
+    try {
+        const auth = localStorage.getItem('auth');
+        const userData = auth ? JSON.parse(auth) : null;
+
+        if (!userData || !userData.accessToken) {
+            throw new Error('You must be authenticated to delete a book');
+        }
+
+        const response = await fetch(`${baseUrl}/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'X-Authorization': userData.accessToken
+            }
+        });
+
+        if (!response.ok) {
+            const error = await response.json();
+            throw new Error(error.message || 'Failed to delete book');
+        }
+    } catch (error) {
+        console.error('Error deleting book:', error);
+        throw error;
+    }
+};
+
