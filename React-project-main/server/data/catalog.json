@@ -1,0 +1,29 @@
+{
+    "1": {
+        "_id": "1",
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "rating": 4.5,
+        "description": "A novel set in the 1300s, ...",
+        "coverUrl": "https://m.media-amazon.com/images/I/81TLiZrasVL._SL1500_.jpg",
+        "_ownerId": "user1"
+    },
+    "2": {
+        "_id": "2",
+        "title": "1984",
+        "author": "George Orwell",
+        "rating": 4.8,
+        "description": "A dystopian novel set in a totalitarian regime that explores themes of surveillance, control, and the manipulation of truth.",
+        "coverUrl": "https://m.media-amazon.com/images/I/612ADI+BVlL._SL1500_.jpg",
+        "_ownerId": "user2"
+    },
+    "3": {
+        "_id": "3",
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "rating": 4.9,
+        "description": "A powerful story of racial injustice and the loss of innocence in the American South...",
+        "coverUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1553383690i/2657.jpg",
+        "_ownerId": "user1"
+    }
+}
